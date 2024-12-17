@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalHub</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FavIcon Link -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Digital Hub" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <!-- remix icons CDN links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+      integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+      integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="full-width">
+      <div class="container">
+        <div class="site-logo">
+          <a href="#"
+            ><img src="favicons/favicon.svg" width="32px" alt="" />
+            <h1>DigitalHub</h1></a
+          >
+        </div>
+        <div class="search-wrapper">
+          <input id="search-bar" type="text" placeholder="Search.." />
+          <i class="ri-search-line"></i>
+        </div>
+        <nav>
+          <ul>
+            <!-- <li><a href="#">Products</a></li>
+                    <li class="dropdown">Category
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3D Software</a></li>
+                            <li><a href="#">Audio Editing Software</a></li>
+                            <li><a href="#">Customizetion Softwares</a></li>
+                            <li><a href="#">Document Software</a></li>
+                            <li><a href="#">Photo Editing Software</a></li>
+                            <li><a href="#">Video Editing Software</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">Brand
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Adobe</a></li>
+                            <li><a href="#">Blender</a></li>
+                            <li><a href="#">Camtasia</a></li>
+                            <li><a href="#">Filmmora</a></li>
+                            <li><a href="#">Microsoft</a></li>
+                        </ul>
+                    </li> -->
+            <li>
+              <a href="#"><i class="ri-shopping-cart-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-user-line"></i></a>
+            </li>
+            <li><a class="btn" href="#">Login/SignUp</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section full-width">
+        <div class="hero-slider container">
+          <img
+            src="https://placeholder.co/1200x400/CEE2EE/5DADE2?text=Slider1"
+            alt=""
+          />
+          <!-- <img src="https://placeholder.co/1200x400/CEE2EE/5DADE2?text=Slider2" alt="">
+                <img src="https://placeholder.co/1200x400/CEE2EE/5DADE2?text=Slider3" alt=""> -->
+        </div>
+      </section>
+      <section class="categories full-width">
+        <div class="categories-wrapper container">
+          <div class="category-card">
+            <div class="cat-card-details">
+              <h4>3D Tools</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, odit.
+              </p>
+            </div>
+            <div class="cat-card-img">
+              <i class="ri-box-3-line"></i>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="cat-card-details">
+              <h4>3D Tools</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, odit.
+              </p>
+            </div>
+            <div class="cat-card-img">
+              <i class="ri-box-3-line"></i>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="cat-card-details">
+              <h4>3D Tools</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, odit.
+              </p>
+            </div>
+            <div class="cat-card-img">
+              <i class="ri-box-3-line"></i>
+            </div>
+          </div>
+          <div class="category-card">
+            <div class="cat-card-details">
+              <h4>3D Tools</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, odit.
+              </p>
+            </div>
+            <div class="cat-card-img">
+              <i class="ri-box-3-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="on-sale">
+        <div class="on-sale-wrapper container">
+          <h2>On Sale</h2>
+          <div class="on-sale-products-grid">
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://picsum.photos/275/275"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-products-section full-width">
+        <div class="featured-products-wrapper container">
+          <h2>Featured Products</h2>
+          <div class="featured-products-grid">
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+            <div class="product-card">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 26 26"
+                fill="currentColor"
+              >
+                <path
+                  d="M12.001 4.52853C14.35 2.42 17.98 2.49 20.2426 4.75736C22.5053 7.02472 22.583 10.637 20.4786 12.993L11.9999 21.485L3.52138 12.993C1.41705 10.637 1.49571 7.01901 3.75736 4.75736C6.02157 2.49315 9.64519 2.41687 12.001 4.52853Z"
+                ></path>
+              </svg>
+              <div class="product-img-wrapper">
+                <img
+                  src="https://placeholder.co/275/CEE2EE?text=Product"
+                  alt=""
+                  class="product-img"
+                />
+              </div>
+              <div class="product-details">
+                <h4 class="product-title">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, dolor.
+                </h4>
+                <p class="product-price">৳ 2.00 - ৳ 5.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials full-width">
+        <div class="testimonials-wrapper container">
+          <h2>What Our Customers Say?</h2>
+          <div class="testimonials-carousel">
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+									<i class="ri-user-smile-line"></i>
+								</div>
+                <div class="customer-details">
+                  <h3 class="customer-name">Customer Name</h3>
+                  <div class="rating">
+                    <span class="rating-value">4.0</span>
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="quote-icon"><i class="ri-double-quotes-r"></i></span>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aut doloribus velit assumenda recusandae similique.
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+									<i class="ri-user-smile-line"></i>
+								</div>
+                <div class="customer-details">
+                  <h3 class="customer-name">Customer Name</h3>
+                  <div class="rating">
+                    <span class="rating-value">4.0</span>
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="quote-icon"><i class="ri-double-quotes-r"></i></span>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aut doloribus velit assumenda recusandae similique.
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+									<i class="ri-user-smile-line"></i>
+								</div>
+                <div class="customer-details">
+                  <h3 class="customer-name">Customer Name</h3>
+                  <div class="rating">
+                    <span class="rating-value">4.0</span>
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="quote-icon"><i class="ri-double-quotes-r"></i></span>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aut doloribus velit assumenda recusandae similique.
+              </p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="avatar">
+									<i class="ri-user-smile-line"></i>
+								</div>
+                <div class="customer-details">
+                  <h3 class="customer-name">Customer Name</h3>
+                  <div class="rating">
+                    <span class="rating-value">4.0</span>
+                    <div class="stars">
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                      <span class="star">&#9734;</span>
+                    </div>
+                  </div>
+                </div>
+                <span class="quote-icon"><i class="ri-double-quotes-r"></i></span>
+              </div>
+              <p class="testimonial-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aut doloribus velit assumenda recusandae similique.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer full-width">
+      <div class="footer-wrapper container">
+
+      </div>
+    </footer>
+  </body>
+</html>

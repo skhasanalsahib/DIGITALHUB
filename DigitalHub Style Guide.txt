@@ -1,0 +1,173 @@
+Style Guide for "DigitalHub" Website
+
+Colors-
+
+Primary Color: Space Gray (#333333)
+
+Secondary Color: Soft Blue (#5DADE2)
+
+Accent Color: Electric Blue (#2980B9)
+
+Background Color: Light Gray (#ECF0F1)
+
+Text Color: Dark Slate Gray (#2C3E50)
+
+
+Typography
+
+Headings (Montserrat)
+
+H1:
+
+Font Size: 48px
+
+Line Height: 1.2
+
+Margin: 0 0 20px
+
+Color: Space Gray (#333333)
+
+H2:
+
+Font Size: 36px
+
+Line Height: 1.3
+
+Margin: 0 0 15px
+
+Color: Space Gray (#333333)
+
+Body Text (Roboto)
+
+Normal Text:
+
+Font Size: 16px
+
+Line Height: 1.6
+
+Margin: 0 0 20px
+
+Color: Dark Slate Gray (#2C3E50)
+
+Small Text:
+
+Font Size: 14px
+
+Line Height: 1.5
+
+Margin: 0 0 15px
+
+Color: Dark Slate Gray (#2C3E50)
+
+Layout
+Container Width: 1200px
+
+Padding:
+
+Main Containers: 20px
+
+Sections: 50px top and bottom, 20px sides
+
+Margins:
+
+Between Sections: 50px top and bottom
+
+Internal Elements: 10px
+
+Grid:
+
+Product Grid: 20px gap
+
+Buttons
+Call-To-Action (CTA) Button
+
+Text: 16px bold
+
+Color: White (#FFFFFF)
+
+Background: Soft Blue (#5DADE2) or Electric Blue (#2980B9)
+
+Padding: 10px 20px
+
+Border Radius: 5px
+
+Cursor: Pointer
+
+Components
+Headers
+
+H1: 48px, Line Height: 1.2, Margin: 0 0 20px, Color: Space Gray (#333333)
+
+H2: 36px, Line Height: 1.3, Margin: 0 0 15px, Color: Space Gray (#333333)
+
+Body Text
+
+Normal Text: 16px, Line Height: 1.6, Margin: 0 0 20px, Color: Dark Slate Gray (#2C3E50)
+
+Small Text: 14px, Line Height: 1.5, Margin: 0 0 15px, Color: Dark Slate Gray (#2C3E50)
+
+CTA Buttons
+
+Text: 16px bold
+
+Color: White (#FFFFFF)
+
+Background: Soft Blue (#5DADE2) or Electric Blue (#2980B9)
+
+Padding: 10px 20px
+
+Border Radius: 5px
+
+Cursor: Pointer
+
+Interactive Elements
+
+Links: Color change on hover, underline on active
+
+Buttons: Background color change on hover
+
+Forms
+
+Input Fields: Width: 100%, Padding: 10px, Margin: 10px 0, Border: 1px solid Space Gray (#333333), Border Radius: 5px
+
+Buttons: Background Color: Soft Blue (#5DADE2), Color: White (#FFFFFF), Padding: 10px 20px, Border Radius: 5px, Cursor: Pointer
+
+Buttons (Hover): Background Color: Electric Blue (#2980B9)
+
+Blockquotes
+
+Font Style: Italic
+
+Background Color: Light Gray (#ECF0F1)
+
+Padding: 15px
+
+Border Left: 5px solid Soft Blue (#5DADE2)
+
+Margin: 20px 0
+
+Lists
+
+Padding Left: 20px
+
+Margin: 20px 0
+
+List Items: Margin Bottom: 10px
+
+Iconography
+
+Social Media Icons: Width: 30px, Height: 30px, Margin Right: 10px, Cursor: Pointer
+
+Feature Icons: Width: 50px, Height: 50px, Margin Bottom: 10px
+
+Footer
+
+Social Icons: Display: Flex, Justify Content: Center, Margin Bottom: 20px
+
+Newsletter Signup: Text Align: Center, Margin Top: 20px
+
+Input Fields: Width: 300px, Padding: 10px, Margin: 10px 0, Border: 1px solid Space Gray (#333333), Border Radius: 5px
+
+Buttons: Background Color: Soft Blue (#5DADE2), Color: White (#FFFFFF), Padding: 10px 20px, Border Radius: 5px, Cursor: Pointer
+
+Buttons (Hover): Background Color: Electric Blue (#2980B9)
