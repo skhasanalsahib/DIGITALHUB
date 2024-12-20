@@ -97,6 +97,8 @@
 .product-card {
     background-color: var(--white-color);
     /* max-width: 250px; */
+    text-decoration: none;
+    color: var(--text-color);
     border-radius: 10px;
     position: relative;
     box-shadow: 0 0 0 0 #33333324;
@@ -159,7 +161,7 @@
 }
 
 .product-card .product-details {
-    padding: 0 15px 10px 15px;
+    padding: 10px 0 10px 15px;
 }
 
 /* .product-card .product-title {
