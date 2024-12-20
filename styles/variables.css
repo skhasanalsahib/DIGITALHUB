@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #333333; /* Space Gray */
+    --secondary-color: #5DADE2; /* Soft Blue */
+    --accent-color: #2980B9; /* Electric Blue */
+    --background-color: #ECF0F1; /* Light Gray */
+    --text-color: #2C3E50; /* Dark Slate Gray */
+    --white-color: #ffffff; /*White*/
+
+    --max-width: 1200px;
+}
