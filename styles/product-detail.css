@@ -54,13 +54,58 @@
   margin-right: 5px;
 }
 
+.rating-review .stock-status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}
+
+.rating-review .stock-status .in-stock-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+}
+
+.rating-review .stock-status .in-stock {
+  font-size: 16px;
+  color: #2ecc71;
+}
+
+.rating-review .stock-status .out-of-stock-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+}
+
+.rating-review .stock-status .out-of-stock {
+  font-size: 16px;
+  color: #e74c3c;
+}
+
 .price {
   font-size: 24px;
   color: #e74c3c;
   font-weight: 600;
   margin: 15px 0;
   padding-bottom: 15px;
-  border-bottom: 1px solid #e0e0e0;
+  width: fit-content;
+  position: relative;
+}
+
+.price .discount {
+  color: #e74d3ca2;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: line-through;
+  margin-left: 10px;
+  position: absolute;
+  bottom: 0;
 }
 
 .product-info .short-description {
@@ -68,7 +113,8 @@
   color: #2c3e50cb;
   line-height: 1.8;
   margin : 20px 0;
-  padding-bottom: 15px;
+  padding: 15px 0;
+  border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -121,6 +167,17 @@
 
 .action-buttons .buy-now {
   background-color: #e74c3c;
+}
+
+.action-buttons .disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.action-buttons button.disabled:hover {
+  background-color: #bdc3c7;
+  transform: scale(1);
+  box-shadow: none;
 }
 
 .action-buttons .buy-now:hover {
