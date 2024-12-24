@@ -1,0 +1,97 @@
+.cart-section {
+    margin-top: 85px;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cart-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.cart-items {
+    grid-column: span 2;
+    width: 100%;
+}
+
+
+
+.cart-items .cart-item {
+    display: flex;
+    background-color: var(--white-color);
+    padding: 15px;
+    border-radius: 15px;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.cart-item .item-img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-items .cart-item img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-item .item-content {
+    /* background-color: black; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item-content .item-details {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    line-height: 1.17em;
+}
+
+.duration {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.item-management {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-management .stock-status {
+    font-size: 14px;
+    color: #2ecc71;
+}
+
+.stock-status .stock-indicator {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    display: inline-block;
+    position: relative;
+}
+
+
+.item-remove-btn {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    background-color: #d3d3d3;
+    border: none;
+    border-radius: 2px;
+    color: #e74c3c;
+    cursor: pointer;
+}

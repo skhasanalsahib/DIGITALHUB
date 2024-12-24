@@ -11,6 +11,11 @@
 }
 
 .light-text {
+    font-size: 16px;
+    color: #2c3e50a4;
+}
+
+.light-small-text {
     font-size: 14px;
     color: #2c3e50a4;
 }

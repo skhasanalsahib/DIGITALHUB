@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/component.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- FavIcon Link -->
+    <link
+        rel="icon"
+        type="image/png"
+        href="../favicons/favicon-96x96.png"
+        sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="../favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../favicons/favicon.ico" />
+    <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="../favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Digital Hub" />
+    <link rel="manifest" href="../favicons/site.webmanifest" />
+
+    <!-- remix icons CDN links -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css"
+        integrity="sha512-T7lIYojLrqj7eBrV1NvUSZplDBi8mFyIEGFGdox8Bic92Col3GVrscbJkL37AJoDmF2iAh81fRpO4XZukI6kbA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    
+    <!-- header section -->
+	<header class="full-width">
+		<div class="container">
+			<div class="site-logo">
+				<a href="#" >
+					<img src="../favicons/favicon.svg" width="32px" alt="" />
+					<h1>DigitalHub</h1>
+				</a>
+			</div>
+			<div class="search-wrapper">
+				<input id="search-bar" type="text" placeholder="Search.." />
+				<i class="ri-search-line"></i>
+			</div>
+			<nav>
+				<ul>
+					<!-- <li><a href="#">Products</a></li>
+									<li class="dropdown">Category
+											<ul class="dropdown-menu">
+													<li><a href="#">3D Software</a></li>
+													<li><a href="#">Audio Editing Software</a></li>
+													<li><a href="#">Customizetion Softwares</a></li>
+													<li><a href="#">Document Software</a></li>
+													<li><a href="#">Photo Editing Software</a></li>
+													<li><a href="#">Video Editing Software</a></li>
+											</ul>
+									</li>
+									<li class="dropdown">Brand
+											<ul class="dropdown-menu">
+													<li><a href="#">Adobe</a></li>
+													<li><a href="#">Blender</a></li>
+													<li><a href="#">Camtasia</a></li>
+													<li><a href="#">Filmmora</a></li>
+													<li><a href="#">Microsoft</a></li>
+											</ul>
+									</li> -->
+					<li>
+						<a href="#"><i class="ri-shopping-cart-line"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="ri-user-line"></i></a>
+					</li>
+					<li><a class="btn" href="#">Login/SignUp</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+		<section class="cart-section full-width">
+			<div class="container">
+                <h2>My Cart</h2>
+                <div class="cart-contents">
+					<div class="cart-items">
+						
+						<div class="cart-item">
+							<div class="item-img">
+								<img src="https://via.placeholder.com/75" alt="Thumbnail Placeholder">
+							</div>
+							<div class="item-content">
+								<div class="item-details">
+									<h3>Product Name</h3>
+									<h3 class="price">Price: $100</h3>
+								</div>
+								<p class="duration light-small-text">Duration: 1 Month</p>
+								<div class="item-management">
+									<span class="stock-status">
+										<span class="stock-indicator"></span>
+										In Stock
+									</span>
+									<button class="item-remove-btn" onclick="{
+										this.parentElement.parentElement.parentElement.style.visibility = 0;
+										this.parentElement.parentElement.parentElement.remove();
+									}"><i class="ri-delete-bin-line"></i></button>
+								</div>
+							</div>
+						</div>
+						<div class="cart-item">
+							<div class="item-img">
+								<img src="https://via.placeholder.com/75" alt="Thumbnail Placeholder">
+							</div>
+							<div class="item-content">
+								<div class="item-details">
+									<h3>Product Name</h3>
+									<h3 class="price">Price: $100</h3>
+								</div>
+								<p class="duration light-small-text">Duration: 1 Month</p>
+								<div class="item-management">
+									<span class="stock-status">
+										<span class="stock-indicator"></span>
+										In Stock
+									</span>
+									<button class="item-remove-btn">Remove</button>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+	
+					<div class="cart-total">
+						<h3>Order Summary</h3>
+						<article>
+							<p>Subtotal: $100</p>
+							<p>Total: $110</p>
+						</article>
+						<input type="text" name="cupon" id="cupon" placeholder="Enter coupon code">
+						<button class="checkout-btn">
+							Checkout
+						</button>
+					</div>
+				</div>
+    
+            </div>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer full-width">
+		<div class="footer-wrapper container">
+			<div class="footer-upper">
+				<div class="digitalhub-info">
+					<img class="footer-logo" src="../favicons/favicon.svg" alt="">
+					<p class="digitalhub-bio">This is just a test website. All the products on this sites are there for our test. This is not a valid site for buying digital products.</p>
+					<div class="social-icons">
+						<i class="ri-facebook-circle-fill"></i>
+						<i class="ri-instagram-fill"></i>
+						<i class="ri-whatsapp-fill"></i>
+						<i class="ri-twitter-x-line"></i>
+					</div>
+				</div>
+
+				<div class="quick-links">
+					<h3>Quick Links</h3>
+					<nav>
+						<ul>
+							<li><a href="#">All Products</a></li>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms of Service</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="newsletter-sub">
+					<form action="#" method="post">
+						<h3>Subscribe to our Newsletters</h3>
+						<input type="email" name="user-mail" id="user-mail" placeholder="Enter your mail">
+						<input class="btn" id="mail-submit" type="submit" value="Submit" >
+					</form>
+				</div>
+			</div>
+			<p class="copyright-text">&copy; All Rights Reserved By DigitalHub</p>
+		</div>
+	</footer>
+
+</body>
+</html>
