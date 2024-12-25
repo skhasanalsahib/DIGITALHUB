@@ -154,11 +154,21 @@
 	
 					<div class="cart-total">
 						<h3>Order Summary</h3>
-						<article>
-							<p>Subtotal: $100</p>
-							<p>Total: $110</p>
+						<article class="subtotal">
+							<span>Subtotal:</span> <span>100$</span>
 						</article>
-						<input type="text" name="cupon" id="cupon" placeholder="Enter coupon code">
+						<article class="discount">
+							<span>Discount (0%):</span> <span>0$</span>
+						</article>
+						<article class="total">
+							<span>Total:</span> <span>100$</span>
+						</article>
+
+						<div class="coupon">
+							<input type="text" name="cupon" id="cupon" placeholder="Enter coupon code" onfocus="{this.parentElement.classList.add('outline-active')}" onfocusout="{this.parentElement.classList.remove('outline-active')}">
+							<button class="apply-cupon">Apply</button>
+						</div>
+
 						<button class="checkout-btn">
 							Checkout
 						</button>
