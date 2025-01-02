@@ -1,0 +1,64 @@
+/* 1st part login box start */
+body {
+    font-family: ;
+    background-color: #f7f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-box {
+    background:#5DADE2 ;
+    width: 500px;
+    padding: 40px;
+    border-radius: 13px;
+    text-align: center;
+}
+
+
+.login-box img {
+    width: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 20px;
+    /* box-shadow: whitesmoke; */
+}
+
+.login-box h2 {
+    font-size: 50px;
+    color:#333333;
+}
+
+.login-box p {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* 1st part login box end */
+
+/* 2nd part login form input start */
+.login-form input {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+/* 2nd part login from input end */
+
+/* 3rd part acton buttons start */
+.action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px 0;
+}
+
+
+
