@@ -18,22 +18,61 @@
     <div id="content">Stabilized Content</div>
     
     <script>
-        if (window.DeviceMotionEvent) {
-            window.addEventListener('devicemotion', function(event) {
-                const accX = event.accelerationIncludingGravity.x;
-                const accY = event.accelerationIncludingGravity.y;
+        class KalmanFilter {
+    constructor() {
+        this.R = 1; // Noise covariance
+        this.Q = 3; // Process covariance
+        this.A = 1; // State vector
+        this.B = 0; // Control vector
+        this.C = 1; // Measurement vector
+        this.cov = NaN;
+        this.x = NaN; // Estimated signal without noise
+    }
 
-                const content = document.getElementById('content');
-                const rect = content.getBoundingClientRect();
-                const left = (window.innerWidth - rect.width) / 2 - accX * 10;
-                const top = (window.innerHeight - rect.height) / 2 - accY * 10;
-
-                content.style.left = `${left}px`;
-                content.style.top = `${top}px`;
-            });
+    filter(z) {
+        if (isNaN(this.x)) {
+            this.x = (1 / this.C) * z;
+            this.cov = (1 / this.C) * this.Q * (1 / this.C);
         } else {
-            alert("DeviceMotionEvent is not supported on your device or browser.");
+            // Compute prediction
+            let predX = (this.A * this.x) + (this.B * 0);
+            let predCov = ((this.A * this.cov) * this.A) + this.R;
+
+            // Kalman gain
+            let K = predCov * this.C * (1 / ((this.C * predCov * this.C) + this.Q));
+
+            // Correction
+            this.x = predX + K * (z - (this.C * predX));
+            this.cov = predCov - (K * this.C * predCov);
         }
+
+        return this.x;
+    }
+}
+
+const kalmanX = new KalmanFilter();
+const kalmanY = new KalmanFilter();
+
+if (window.DeviceMotionEvent) {
+    window.addEventListener('devicemotion', function(event) {
+        const accX = event.accelerationIncludingGravity.x;
+        const accY = event.accelerationIncludingGravity.y;
+
+        const filteredX = kalmanX.filter(accX);
+        const filteredY = kalmanY.filter(accY);
+
+        const content = document.getElementById('content');
+        const rect = content.getBoundingClientRect();
+        const left = (window.innerWidth - rect.width) / 2 - filteredX * 10;
+        const top = (window.innerHeight - rect.height) / 2 - filteredY * 10;
+
+        content.style.left = `${left}px`;
+        content.style.top = `${top}px`;
+    });
+} else {
+    alert("DeviceMotionEvent is not supported on your device or browser.");
+}
+
     </script>
 </body>
 </html>
