@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stabilized Content</title>
+    <style>
+        #content {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">Stabilized Content</div>
+    
+    <script>
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', function(event) {
+                const accX = event.accelerationIncludingGravity.x;
+                const accY = event.accelerationIncludingGravity.y;
+
+                const content = document.getElementById('content');
+                const rect = content.getBoundingClientRect();
+                const left = (window.innerWidth - rect.width) / 2 - accX * 10;
+                const top = (window.innerHeight - rect.height) / 2 - accY * 10;
+
+                content.style.left = `${left}px`;
+                content.style.top = `${top}px`;
+            });
+        } else {
+            alert("DeviceMotionEvent is not supported on your device or browser.");
+        }
+    </script>
+</body>
+</html>
